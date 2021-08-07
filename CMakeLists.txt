@@ -10,6 +10,7 @@ include(udphInit)
 TARGET_CREATE_LIB(libudph INTERFACE)
 
 TARGET_APPEND_DEP(libudph libudph::Math)
+TARGET_APPEND_DEP(libudph libudph::Class)
 
 TARGET_LINK(libudph)
 
