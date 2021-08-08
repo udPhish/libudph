@@ -7,6 +7,9 @@ project(libudph VERSION "${GIT_VERSION}" LANGUAGES CXX)
 
 include(udphInit)
 
+PROJECT_FETCH_DIR("Math")
+PROJECT_FETCH_DIR("Class")
+
 TARGET_CREATE_LIB(libudph INTERFACE)
 
 TARGET_APPEND_DEP(libudph libudph::Math)
