@@ -1,0 +1,9 @@
+[submodule "libudph_Container"]
+	path = libudph_Container
+	url = https://github.com/udPhish/libudph_Container.git
+[submodule "libudph_Class"]
+	path = libudph_Class
+	url = https://github.com/udPhish/libudph_Class.git
+[submodule "libudph_Math"]
+	path = libudph_Math
+	url = https://github.com/udPhish/libudph_Math.git

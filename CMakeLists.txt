@@ -3,20 +3,23 @@ cmake_minimum_required(VERSION 3.18.0)
 
 include(cmake/udph.cmake)
 
-project(libudph VERSION "${GIT_VERSION}" LANGUAGES CXX)
+PROJECT_CREATE(libudph)
 
-include(udphInit)
-
-PROJECT_FETCH_DIR("Math")
-PROJECT_FETCH_DIR("Class")
+PROJECT_LOAD_GIT_SUBMODULE(libudph_Container "https://github.com/udPhish/libudph_Container.git" master)
+PROVIDE_PROJECT(libudph_Container)
+PROJECT_LOAD_GIT_SUBMODULE(libudph_Class "https://github.com/udPhish/libudph_Class.git" master)
+PROVIDE_PROJECT(libudph_Class)
+PROJECT_LOAD_GIT_SUBMODULE(libudph_Math "https://github.com/udPhish/libudph_Math.git" master)
+PROVIDE_PROJECT(libudph_Math)
 
 TARGET_CREATE_LIB(libudph INTERFACE)
 
-TARGET_APPEND_DEP(libudph libudph::Math)
+TARGET_APPEND_DEP(libudph libudph::Container)
 TARGET_APPEND_DEP(libudph libudph::Class)
+TARGET_APPEND_DEP(libudph libudph::Math)
 
 TARGET_LINK(libudph)
 
 TARGET_PACKAGE(libudph)
 
-include(udphFinalize)
+FINALIZE()
