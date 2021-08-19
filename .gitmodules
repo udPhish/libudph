@@ -1,9 +1,0 @@
-[submodule "cmake"]
-	path = cmake
-	url = https://github.com/udPhish/udphCMake.git
-[submodule "Math"]
-	path = Math
-	url = https://github.com/udPhish/libudph_Math.git
-[submodule "Class"]
-	path = Class
-	url = https://github.com/udPhish/libudph_Class.git
