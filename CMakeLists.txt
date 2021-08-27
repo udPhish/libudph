@@ -9,14 +9,14 @@ PROJECT_LOAD_GIT_SUBMODULE(libudph_Class "https://github.com/udPhish/libudph_Cla
 PROVIDE_PROJECT(libudph_Class)
 PROJECT_LOAD_GIT_SUBMODULE(libudph_Container "https://github.com/udPhish/libudph_Container.git" master)
 PROVIDE_PROJECT(libudph_Container)
-PROJECT_LOAD_GIT_SUBMODULE(libudph_Math "https://github.com/udPhish/libudph_Math.git" as_static_lib)
+PROJECT_LOAD_GIT_SUBMODULE(libudph_Math "https://github.com/udPhish/libudph_Math.git" master)
 PROVIDE_PROJECT(libudph_Math)
 
-TARGET_CREATE_LIB(libudph INTERFACE)
+TARGET_CREATE_LIB(libudph STATIC)
 
-TARGET_APPEND_DEP_INTERFACE(libudph libudph::Class)
-TARGET_APPEND_DEP_INTERFACE(libudph libudph::Container)
-TARGET_APPEND_DEP_INTERFACE(libudph libudph::Math)
+TARGET_APPEND_DEP_PUBLIC(libudph libudph::Class)
+TARGET_APPEND_DEP_PUBLIC(libudph libudph::Container)
+TARGET_APPEND_DEP_PUBLIC(libudph libudph::Math)
 
 TARGET_LINK(libudph)
 
