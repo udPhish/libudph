@@ -14,9 +14,9 @@ PROVIDE_PROJECT(libudph_Math)
 
 TARGET_CREATE_LIB(libudph INTERFACE)
 
-TARGET_APPEND_DEP(libudph libudph::Class)
-TARGET_APPEND_DEP(libudph libudph::Container)
-TARGET_APPEND_DEP(libudph libudph::Math)
+TARGET_APPEND_DEP_INTERFACE(libudph libudph::Class)
+TARGET_APPEND_DEP_INTERFACE(libudph libudph::Container)
+TARGET_APPEND_DEP_INTERFACE(libudph libudph::Math)
 
 TARGET_LINK(libudph)
 
