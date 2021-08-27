@@ -14,7 +14,7 @@ PROVIDE_PROJECT(libudph_Math)
 
 TARGET_CREATE_LIB(libudph STATIC)
 
-TARGET_APPEND_SRC(libudph dummy.cpp)
+TARGET_APPEND_SRC(libudph libudph/dummy.cpp)
 
 TARGET_APPEND_DEP_PUBLIC(libudph libudph::Class)
 TARGET_APPEND_DEP_PUBLIC(libudph libudph::Container)
