@@ -7,3 +7,6 @@
 [submodule "libudph_Math"]
 	path = libudph_Math
 	url = https://github.com/udPhish/libudph_Math.git
+[submodule "libudph_GUI"]
+	path = libudph_GUI
+	url = https://github.com/udPhish/libudph_GUI.git
