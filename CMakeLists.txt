@@ -11,7 +11,7 @@ PROJECT_LOAD_GIT_SUBMODULE(libudph_Container "https://github.com/udPhish/libudph
 PROVIDE_PROJECT(libudph_Container)
 PROJECT_LOAD_GIT_SUBMODULE(libudph_Math "https://github.com/udPhish/libudph_Math.git" master)
 PROVIDE_PROJECT(libudph_Math)
-PROJECT_LOAD_GIT_SUBMODULE(libudph_GUI "https://github.com/udPhish/libudph_GUI.git" master)
+PROJECT_LOAD_GIT_SUBMODULE(libudph_GUI "https://github.com/udPhish/libudph_GUI.git" dev)
 PROVIDE_PROJECT(libudph_GUI)
 
 TARGET_CREATE_LIB(libudph STATIC)
