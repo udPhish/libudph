@@ -1,12 +1,16 @@
 [submodule "libudph_Container"]
 	path = libudph_Container
 	url = https://github.com/udPhish/libudph_Container.git
+	branch = master
 [submodule "libudph_Class"]
 	path = libudph_Class
 	url = https://github.com/udPhish/libudph_Class.git
+	branch = master
 [submodule "libudph_Math"]
 	path = libudph_Math
 	url = https://github.com/udPhish/libudph_Math.git
+	branch = master
 [submodule "libudph_GUI"]
 	path = libudph_GUI
 	url = https://github.com/udPhish/libudph_GUI.git
+	branch = dev
