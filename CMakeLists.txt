@@ -25,6 +25,4 @@ TARGET_APPEND_DEP_PUBLIC(libudph libudph::GUI)
 
 TARGET_LINK(libudph)
 
-TARGET_PACKAGE(libudph)
-
 FINALIZE()
