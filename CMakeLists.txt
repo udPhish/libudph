@@ -5,7 +5,7 @@ include(cmake/udph.cmake)
 
 PROJECT_CREATE(libudph)
 
-PROJECT_LOAD_GIT_SUBMODULE(libudph_Class "https://github.com/udPhish/libudph_Class.git" event_chain)
+PROJECT_LOAD_GIT_SUBMODULE(libudph_Class "https://github.com/udPhish/libudph_Class.git" master)
 PROVIDE_PROJECT(libudph_Class)
 PROJECT_LOAD_GIT_SUBMODULE(libudph_Container "https://github.com/udPhish/libudph_Container.git" master)
 PROVIDE_PROJECT(libudph_Container)
