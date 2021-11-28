@@ -5,7 +5,7 @@
 [submodule "libudph_Class"]
 	path = libudph_Class
 	url = https://github.com/udPhish/libudph_Class.git
-	branch = event_chain
+	branch = master
 [submodule "libudph_Math"]
 	path = libudph_Math
 	url = https://github.com/udPhish/libudph_Math.git
